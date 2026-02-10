@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surya S | Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        background: radial-gradient(circle at top, #0a0f1e, #000);
+        color: #00ffcc;
+        min-height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 20px;
+        border: 2px solid rgba(0,255,204,0.25);
+        pointer-events: none;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        border-bottom: 1px solid rgba(0,255,204,0.3);
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+        letter-spacing: 4px;
+        text-shadow: 0 0 12px #00ffcc;
+    }
+
+    header p {
+        margin-top: 10px;
+        color: #9fffe8;
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding: 40px 10%;
+    }
+
+    .panel {
+        border: 1px solid rgba(0,255,204,0.45);
+        padding: 25px;
+        margin-bottom: 30px;
+        background: rgba(0, 0, 0, 0.45);
+        box-shadow: 0 0 15px rgba(0,255,204,0.2);
+    }
+
+    .panel h2 {
+        margin-bottom: 15px;
+        color: #00ffd5;
+        border-bottom: 1px dashed rgba(0,255,204,0.4);
+        padding-bottom: 8px;
+        letter-spacing: 2px;
+    }
+
+    ul {
+        list-style: none;
+        line-height: 1.8;
+    }
+
+    ul li::before {
+        content: "▶ ";
+        color: #00ffcc;
+    }
+
+    .skills span {
+        display: inline-block;
+        margin: 6px;
+        padding: 6px 14px;
+        border: 1px solid rgba(0,255,204,0.6);
+        font-size: 0.9rem;
+    }
+
+    .contact a {
+        color: #00ffcc;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        transition: 0.3s;
+    }
+
+    .contact a:hover {
+        text-shadow: 0 0 10px #00ffcc;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.85rem;
+        color: #66ffe0;
+        border-top: 1px solid rgba(0,255,204,0.3);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SURYA S</h1>
+    <p>BCA Student | Aspiring Developer</p>
+</header>
+
+<section>
+
+    <div class="panel">
+        <h2>ABOUT ME</h2>
+        <p>
+            I am a BCA student at Kristu Jayanti Deemed to Be University with a strong
+            interest in web technologies and application development.
+            I enjoy creating futuristic interfaces and continuously improving my
+            technical skills to grow as a software professional.
+        </p>
+    </div>
+
+    <div class="panel">
+        <h2>EDUCATION</h2>
+        <ul>
+            <li>
+                <strong>Bachelor of Computer Applications (BCA)</strong><br>
+                Kristu Jayanti Deemed to Be University<br>
+                Graduation Year: 2026
+            </li>
+            <li>
+                <strong>Pre-University Course (PUC)</strong><br>
+                New Baldwin International PU College
+            </li>
+            <li>
+                <strong>10th Grade</strong><br>
+                New Florence Public School
+            </li>
+        </ul>
+    </div>
+
+    <div class="panel">
+        <h2>SKILLS</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C</span>
+            <span>Python (Basics)</span>
+            <span>Git & GitHub</span>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h2>PROJECT</h2>
+        <ul>
+            <li>
+                <strong>Surya Portfolio</strong><br>
+                A personal portfolio website designed with a game-style HUD interface
+                to showcase education, skills, and contact details.
+            </li>
+        </ul>
+    </div>
+
+    <div class="panel contact">
+        <h2>CONTACT</h2>
+
+        <!-- Phone Dialer -->
+        <a href="tel:+917483089672">📞 Call: 7483089672</a>
+
+        <!-- Email App -->
+        <a href="mailto:25bcae67@kristujayanti.com">
+            📧 Email: 25bcae67@kristujayanti.com
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/surya-s-a43842383" target="_blank">
+            🔗 LinkedIn Profile
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Surya S | GAME HUD Portfolio
+</footer>
+
+</body>
+</html>
