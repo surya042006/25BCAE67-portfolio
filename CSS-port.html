@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", monospace;
+}
+
+body{
+    background: linear-gradient(135deg,#020617,#000);
+    color:#00ff99;
+    min-height:100vh;
+}
+
+/* HUD Frame */
+body::before{
+    content:"";
+    position:fixed;
+    inset:15px;
+    border:2px solid rgba(0,255,153,0.35);
+    box-shadow:0 0 20px rgba(0,255,153,0.2);
+    pointer-events:none;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:40px 20px;
+    border-bottom:1px solid rgba(0,255,153,0.3);
+}
+
+header h1{
+    font-size:2.8rem;
+    letter-spacing:5px;
+    text-shadow:0 0 15px #00ff99;
+}
+
+header p{
+    margin-top:10px;
+    color:#9fffdc;
+    letter-spacing:2px;
+}
+
+/* Sections */
+section{
+    padding:40px 10%;
+}
+
+.panel{
+    border:1px solid rgba(0,255,153,0.5);
+    padding:25px;
+    margin-bottom:30px;
+    background:rgba(0,0,0,0.45);
+    box-shadow:0 0 20px rgba(0,255,153,0.15);
+    transition:0.3s;
+}
+
+.panel:hover{
+    box-shadow:0 0 30px rgba(0,255,153,0.35);
+}
+
+.panel h2{
+    margin-bottom:15px;
+    color:#00ffaa;
+    letter-spacing:3px;
+    border-bottom:1px dashed rgba(0,255,153,0.4);
+    padding-bottom:8px;
+}
+
+ul{
+    list-style:none;
+    line-height:1.8;
+}
+
+ul li::before{
+    content:"▸ ";
+    color:#00ff99;
+}
+
+/* Contact links */
+.contact a{
+    display:block;
+    margin-top:12px;
+    color:#00ff99;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.contact a:hover{
+    text-shadow:0 0 12px #00ff99;
+    transform:translateX(5px);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:0.85rem;
+    color:#7fffd4;
+    border-top:1px solid rgba(0,255,153,0.3);
+}
